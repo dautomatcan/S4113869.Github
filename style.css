@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    overflow: hidden;
+}
+#landing h1 {
+    font-size: 80px !important;
+    color: rgb(255, 202, 172)
+}
+    
+    
+
+.fox {
+    width: 50vw;
+    height: auto;
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0%);
+    bottom: 50px;
+    cursor: pointer;
+    transition: width 2s;
+}
+
+.fox:hover {
+    width: 60%;
+}
+#landing {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  text-align: center;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  color: white;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+  font-size: 150%;
+}
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1s ease-in-out;
+    display: none;
+}
+
+.canh-off {
+    opacity: 0;
+    position: absolute;
+    transition: opacity 0.5s ease-in-out;
+    pointer-events: none;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.canh-on {
+    opacity: 1;
+    pointer-events: auto;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.canh-on,
+.canh-off {
+    text-align: center;
+    position: relative;
+}
+
+.canh-on img,
+.canh-off img {
+    position: absolute;
+    left: 50%;
+    top: 40px;
+    transform: translateX(-50%);
+    width: 50vw;
+    height: auto;
+    display: block;
+}
+
+.canh-on img {
+    cursor: pointer;
+}
+
+.canh-on img:hover {
+    width: 55vw;
+    transition: width 1s;
+}
+
+.canh-off img {
+    pointer-events: none;
+    width: 50vw !important;
+    transition: none;
+}
+
+
+.canh-off img[src*="img04"],
+.canh-off img[src*="img05"],
+.canh-off img[src*="img06"],
+.canh-off img[src*="img07"],
+.canh-off img[src*="img08"],
+.canh-off img[src*="img10"],
+.canh-off img[src*="img11"],
+.canh-on img[src*="img04"],
+.canh-on img[src*="img05"],
+.canh-on img[src*="img06"],
+.canh-on img[src*="img07"],
+.canh-on img[src*="img08"],
+.canh-on img[src*="img10"],
+.canh-on img[src*="img11"] {
+    transform: translateX(-50%) scale(1.3);
+}
+
+#poem {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff6ee;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+    z-index: 100;
+    pointer-events: all;
+}
+
+#poem p {
+    font-size: 40px;
+    position: absolute;
+    top: 550px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+body, p, div {
+    font-family: 'Chewy', cursive;
+}
+
+
+
+
+
+
+
