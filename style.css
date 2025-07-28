@@ -149,7 +149,7 @@ body {
 #poem p {
     font-size: 40px;
     position: absolute;
-    top: 550px;
+    top: 70vh;
     left: 50%;
     transform: translateX(-50%);
 }
